@@ -1,1 +1,1 @@
-# varnan-the-ai-expert
+# Varnan - The AI Expert

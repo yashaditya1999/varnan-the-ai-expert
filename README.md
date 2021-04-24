@@ -6,8 +6,6 @@ This project is designed to get the fatial expression and detect the objects.
 <br>
 It uses ml5.js library features for ML and electron.js for creation of desktop application.
 <br>
-Find the sample desktop application in **dist** folder.
-<br>
 It has a chatbot module, so run it and enjoy!
 
 To **run**: 

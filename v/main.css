@@ -1,0 +1,281 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    margin: auto;
+    background-image: url('images/lip.webp');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+#top{
+    background-color: rgba(247, 0, 0, 0.253);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+nav{
+    position: fixed;
+    display: none;
+    width: fit-content;
+    top:120px;
+    right:0;
+    z-index: 4000;
+}
+nav div{
+    margin:10px;
+    background-color: rgba(0, 0, 0, 0.445);
+    box-shadow: 0 0 10px 1px white;
+    padding: 10px;
+    cursor: pointer;
+}
+nav div:hover{
+    background-color: black;
+    box-shadow: 0px 0px 0px 3px white;
+    border-radius: 10px;
+}
+#content{
+    padding: 50px;
+    width: 100%;
+}
+#load{
+    text-align: center;
+    padding-top:27vh;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.582);
+    z-index: 5000;
+}
+#desc{
+    display: inline-block;
+    min-width: 40%;
+    text-align: center;
+    margin: auto;
+}
+#emotionM, #objectDM {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navcontent{
+    padding: 20px;
+    margin:auto;
+}
+#navcontent div{
+    display: inline-block;
+    box-shadow: 0 0 10px 1px white;
+    width:100px;
+    height:100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: xx-large;
+    border-radius: 100%;
+    margin:10px;
+    cursor: pointer;
+}
+#navcontent div:hover {
+    box-shadow: 0 0 10px 1px black;
+    background-color: rgb(196, 196, 196) !important;
+    color: black !important;
+}
+.buttonClose{
+    border: none;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    font-size: large;
+    font-weight: bold;
+    z-index: 4300;
+    outline: none;
+}
+.buttonClose:hover{
+    background: rgb(1, 73, 37);
+    color: white;
+    box-shadow: 0 0 10px 1px white;
+}
+#btnbot{
+    position: fixed;
+    bottom:30px;
+    right: 30px;
+    background: none;
+    border: none;
+    font-size: xx-large;
+    font-weight: bolder;
+    border-radius: 100%;
+    background-color: blue;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    box-shadow: 10px -5px 0px 0px white;
+    outline: none;
+    cursor: pointer;
+}
+#btnbot:hover{
+    background-color: white;
+    box-shadow: 10px -5px 0px 0px blue;
+}
+#botwindow{
+    position: fixed;
+    bottom: 10px;
+    right:10px;
+    width: 90vw;
+    height: 90vh;
+    max-width: 400px;
+    max-height: 600px;
+    background: rgba(255, 255, 255, 0.678);
+    color: black !important;
+    box-shadow: 0 0 10px 1px black;
+    z-index: 5500;
+    border-radius: 10px;
+}
+#chatsection{
+    position: fixed;
+    bottom: 60px;
+    right:10px;
+    width: 90vw;
+    max-width: 400px;
+    height: 490px;
+    padding: 10px;
+    overflow: auto;
+}
+#chatInput{
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#chatSend{
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    font-size: 1.8em;
+}
+#chatSendSpeech{
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    font-size: 2em;
+}
+#chatSend:hover{
+    box-shadow: 0px 0px 5px 0px black;
+}
+#chatSendSpeech:hover{
+    box-shadow: 0px 0px 5px 0px black;
+}
+@keyframes chatSendSKEY {
+    0%{background: white;}
+    50%{background: grey;}
+    100%{background: white;}
+}
+.userElementSec{
+    float: right;
+    clear: both;
+    background: lightgreen;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+    margin: 5px;
+    max-width: 90%;
+    white-space: pre-line;
+}
+.botElementSec{
+    float: left;
+    clear: both;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+    margin: 5px;
+    max-width: 90%;
+    white-space: pre-line;
+}
+@media only screen and (max-height: 665px) {
+    #chatsection{
+        height: 70vh;
+    }
+}
+@media only screen and (max-height: 590px) {
+    #chatsection{
+        height: 68vh;
+    }
+}
+@media only screen and (max-height: 550px) {
+    #chatsection{
+        height: 65vh;
+    }
+}
+@media only screen and (max-height: 450px) {
+    #chatsection{
+        height: 63vh;
+    }
+}
+@media only screen and (max-height: 390px) {
+    #chatsection{
+        height: 60vh;
+    }
+}
+@media only screen and (max-height: 340px) {
+    #chatsection{
+        height: 57vh;
+    }
+}
+@media only screen and (max-height: 305px) {
+    #chatsection{
+        height: 52vh;
+    }
+}
+@media only screen and (max-height: 270px) {
+    #chatsection{
+        height: 48vh;
+    }
+}
+@media only screen and (max-height: 250px) {
+    #chatsection{
+        height: 44vh;
+    }
+}
+@keyframes vlogo{
+    100% {
+        transform: rotateY(3600deg);
+    }
+}
+@keyframes v2logo{
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+@media only screen and (max-width: 460px) {
+    #content{
+        padding: 5%;
+    }
+    #navcontent{
+        padding: 0%;
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "varnan",
+  "version": "1.0.0",
+  "description": "The AI Expert",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "buildw": "electron-builder"
+  },
+  "build": {
+    "directories": {
+      "buildResources": "build"
+    }
+  },
+  "author": "Yash Aditya and Team",
+  "license": "MIT",
+  "dependencies": {
+    "ml5": "^0.6.1",
+    "open": "^8.0.4"
+  },
+  "devDependencies": {
+    "electron": "^12.0.1",
+    "electron-builder": "^22.10.5"
+  }
+}

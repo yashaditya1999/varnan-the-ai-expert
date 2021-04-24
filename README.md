@@ -28,13 +28,19 @@ Click on OD for Object detection.
 <br>
 Some chatbot working commands are: 
 ``` bash
-open
+open replace_here_with_predefined_apps_or_linknames
 open link replace_here_with_any_link
 open app replace_here_with_predefined_apps
 play song_name
 
 search_anything
 ```
+**Note**: open app opens predefined apps only.
+<br>
+Predefined Apps: *'explorer', 'notepad', 'cmd', 'chrome', 'edge', 'firefox', 'opera', 'vlc', 'paint', 'wordpad', 'word', 'powerpoint', 'excel'*
+<br>
+Predefined Linknames: *'google', 'bing', 'youtube', 'yahoo', 'facebook', 'gmail', 'instagram', 'twitter'*
+<br>
 Some snapshots:
 
 ![Screenshot (809)](https://user-images.githubusercontent.com/53245624/115959576-7a0fd700-a52a-11eb-9931-cec092a51196.png)

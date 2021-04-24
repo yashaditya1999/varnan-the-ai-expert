@@ -41,6 +41,8 @@ Predefined Apps: *'explorer', 'notepad', 'cmd', 'chrome', 'edge', 'firefox', 'op
 <br>
 Predefined Linknames: *'google', 'bing', 'youtube', 'yahoo', 'facebook', 'gmail', 'instagram', 'twitter'*
 <br>
+<br>
+<br>
 Some snapshots:
 
 ![Screenshot (809)](https://user-images.githubusercontent.com/53245624/115959576-7a0fd700-a52a-11eb-9931-cec092a51196.png)
